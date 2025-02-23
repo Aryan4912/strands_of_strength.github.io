@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            News
+        </title>
+        <style>
+            body{
+                background: url(naturebg.jpg);
+            }
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 60px;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                color:maroon;
+                
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+            }
+            .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .option {
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .option img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .option h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .option:hover {
+            transform: translateY(-5px)
+            ;}
+        footer {
+      
+        color: maroon;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 40px;
+}
+    </style>
+    </head>
+    <body>
+        <h1>Frontline Stories</h1>
+        <section class="options">
+            <div class="option">
+                <img src="data:image/jpeg;base64,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" alt="Cancer">
+                <a href="https://timesofindia.indiatimes.com/blogs/voices/post-cancer-chemotherapy-hair-fall-treatment-should-be-considered-as-a-part-of-the-holistic-treatment-for-cancer/">Post-Cancer chemotherapy hair fall treatment should be considered as a part of the holistic treatment for cancer</a>
+            </div>
+            <div class="option">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnLul3G_Uqf4wArjWU9GiSrWGdgKkGGyfRuQ&s" alt="Impact of Hair Loss">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6615375/">Psychological Impact of Hair Loss on Cancer Patients</a>
+            </div>
+            <div class="option">
+                <img src="https://img.etimg.com/thumb/msid-115756679,width-300,height-225,imgsize-91380,resizemode-75/istock-1137643360.jpg" alt="Hair Wigs">
+                <a href="https://economictimes.indiatimes.com/news/india/black-gold-hustle-nikhil-kamath-on-how-indias-138-million-wig-empire-makes-the-world-wigs-out/articleshow/115756321.cms?from=mdr">'Black Gold' hustle: Nikhil Kamath on how India's $138 million wig empire makes the world wigs out</a>
+            </div>
+            <div class="option">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtKu0SlsZgIoywVFaaXNjH0O5iyRHj4vetPw&s" alt="Rising Cancer Patients ">
+                <a href="https://indianexpress.com/article/explained/explained-health/cancer-cases-india-9311917/">Why are cancer cases soaring in India?</a>
+            </div>
+            <div class="option">
+                <img src="https://images.indianexpress.com/2024/08/Hina-Khan-gets-a-wig-made-from-her-real-hair-.jpg?w=640" alt="Hena Khan's new wig ">
+                <a href="https://indianexpress.com/article/lifestyle/health/hina-khan-hair-loss-wig-hairpieces-confidence-breast-cancer-9515743/">Hina Khan sports new wig made with her own hair, calls it an empowering decision; here's how it can make a difference mentally</a>
+            </div>
+            <div class="option">
+                <img src="https://static.toiimg.com/thumb/msid-116639793,imgsize-50054,width-400,height-225,resizemode-72/116639793.jpg" alt="Hair donation in MU ">
+                <a href="https://timesofindia.indiatimes.com/city/mumbai/mus-nss-calls-for-hair-donations-for-cancer-patients/articleshow/116639724.cms">MU's NSS calls for hair donation for cancer patients</a>
+            </div>
+            <div class="option">
+                <img src="https://media.assettype.com/newindianexpress%2F2024-03%2Fef69dfa9-1b60-4314-9484-a01a1accff31%2FGifting.jpg?w=1024&auto=format%2Ccompress&fit=max" alt="Making cancer patients happy ">
+                <a href="https://www.newindianexpress.com/good-news/2024/Mar/31/gifting-cancer-survivors-smiles-one-wig-at-a-time">Gifting cancer survivors smiles, one wig at a time</a>
+            </div>
+            <div class="option">
+                <img src="https://th-i.thgim.com/public/news/cities/chennai/2xrvcj/article38384984.ece/alternates/LANDSCAPE_1200/06dchair" alt="Cherian Foundation supports cancer patients ">
+                <a href="https://www.thehindu.com/news/cities/chennai/chennai-based-cherian-foundation-supports-cancer-patients-suffering-hair-loss/article65410272.ece">Chennai-based Cherian Foundation supports cancer patients suffering hair loss</a>
+            </div>
+            <div class="option">
+                <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/1807F/production/_89013489_img_1655.jpg.webp" alt="Banglore wig makers make happy story ">
+                <a href="https://www.bbc.com/news/world-asia-india-35932050">Bangalore wig-maker weaves a happy story</a>
+            </div>
+            <div class="option">
+                <img src="https://img.etimg.com/thumb/msid-93673141,width-650,height-488,imgsize-168440,resizemode-75/human-hair-wigs_istock.jpg" alt="Tremendous growth in hair wigs">
+                <a href="https://economictimes.indiatimes.com/magazines/panache/human-hair-wigs-have-seen-a-300-growth-in-the-last-3-5-years/articleshow/93673061.cms?from=mdr">Human hair wigs have seen a 300% growth in the last 3-5 years</a>
+            </div>
+            <div class="option">
+                <img src="https://media.assettype.com/TNIE%2Fimport%2F2020%2F2%2F1%2Foriginal%2FDe-tr.jpg?w=1024&auto=format%2Ccompress&fit=max" alt="">
+                <a href="https://www.newindianexpress.com/magazine/2020/Feb/02/hair-for-hope-india-collects-hair-for-wigs-for-those-affected-by-cancer-2096766.html">Hair for Hope India collects hair for wigs for those affected by cancer</a>
+            </div>
+            <div class="option">
+                <img src="https://indianexpress.com/wp-content/uploads/2018/04/wig.jpg" alt="Care for wigs as our natural hairs">
+                <a href="https://indianexpress.com/article/cities/mumbai/on-the-job-one-must-care-for-a-wig-like-we-do-for-our-natural-hair-says-wig-maker-mohammed-hassan-mulla-5141732/">On The Job: One must care for a wig like we do for our natural hair, says wig-maker Mohammed Hassan Mulla</a>
+            </div>
+        </section>
+        <footer>
+            <p>© 2024 Our Company. All rights reserved.</p>
+          </footer>
+    </body>
+</html>
