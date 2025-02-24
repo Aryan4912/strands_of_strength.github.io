@@ -20,6 +20,18 @@
             text-align: center;
         }
 
+        .header-content {
+            display: flex;
+            align-items: center;
+           justify-content: center;
+        }
+
+        .header-logo {
+            height: 90px; /* Adjust size as needed */
+            width: auto;
+            margin-right: 10px; /* Space between logo and text */
+        }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
@@ -74,10 +86,14 @@
 </head>
 <body>
 
-<header>
-    <h1>Together for Good!</h1>
-    <h2>Your Participation matters</h2>
-</header>
+    <header>
+        <div class="header-content">
+            <img src="logowebsite.jpg" alt="Logo" class="header-logo">
+            <h1>Together for Good!</h1>
+        </div>
+        <h2>Your Participation matters</h2>
+    </header>
+    
 
 
 <section class="options">
