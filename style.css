@@ -289,9 +289,9 @@ p a{
 }
 
 .icon img {
-    height: 100px; /* Adjust as needed */
+    height: 100px; 
     width: auto;
-    margin-right: 10px; /* Spacing between logo and text */
+    margin-right: 10px;
 }
 
 .logo {
