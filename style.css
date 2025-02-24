@@ -23,7 +23,7 @@
 .icon{
     width: 200px;
     float: left;
-    height: 70px;
+    height: 80px;
     margin-top: 20px;
 }
 
@@ -289,7 +289,7 @@ p a{
 }
 
 .icon img {
-    height: 60px; /* Adjust as needed */
+    height: 90px; /* Adjust as needed */
     width: auto;
     margin-right: 10px; /* Spacing between logo and text */
 }
