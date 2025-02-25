@@ -1,0 +1,116 @@
+<html>
+    <head>
+      <style>
+        body {
+            background:url(naturebg.jpg);
+        }
+  
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }       
+        
+.form{
+    width: 400px;
+    height: 680px;
+    background: rgb(179, 103, 103);
+    position: absolute;
+    top: 20px;
+    left: 550px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color:#467bc6;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    margin-left: 80px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+
+.form input:focus{
+    outline: none;
+}
+.form input[type="radio"]{
+    transform:scale(0.5)
+}
+
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+    font-size:12px;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: white;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin-left: 78px;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #467bc6;
+    font-weight: bold;}
+        
+
+       </style>
+    </head>
+    
+    <body>
+        <img src="circular_logo.png" class="logo" alt="Logo">
+        <div class="form">
+            <h2>Temples Register Here</h2>
+            <form action="/register" method="POST">
+                <input type="hidden" name="type" value="temple">
+                Temple Name:<input type="text" name="name" placeholder="Enter your Temple name" required><br>
+                State:<input type="text" name="state" placeholder="Enter State" required><br>
+                City:<input type="text" name="city" placeholder="Enter City" required><br>
+                Address Line 1:<input type="text" name="addressline1" placeholder="Enter Address Line 1" required><br>
+                Address Line2:<input type="text" name="addressline2" placeholder="Enter Address Line 2" required><br>
+                Email:<input type="email" name="email" placeholder="Enter Email Here" required><br> 
+                Username:<input type="text" name="username" placeholder="Create a username" required><br>
+                Create Password:<input type="password" name="password" placeholder="Enter Password Here" required><br>
+                <button type="submit">Register</button>
+            </form>
+            </div>
+    </body>
+</html>
